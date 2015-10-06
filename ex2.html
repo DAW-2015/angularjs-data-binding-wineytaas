@@ -5,9 +5,9 @@
 	  <meta charset="utf-8">
 	  <title>Angular</title>
 	</head>
-	<body ng-init="c=0">
-	   	<p>Celsius: <input type="number" ng-model="c" min="273,15"></p>
-	   	<p>Kelvin: {{c + 273.15 }}</p>
-	   	<p>Fahrenheit: {{c * 1.8 + 32 }}</p>
+	<body ng-init="dolar=1">
+	   	<p>Dolar: <input type="number" ng-model="dolar" min="0"></p>
+	   	<p>Real: R$ {{ dolar * 4.10 }}</p>
+	   	<p>Euro: € {{ dolar * 0.90 }}</p>
 	</body>
 </html>
