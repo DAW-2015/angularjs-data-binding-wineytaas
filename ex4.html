@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+	  <meta charset="utf-8">
+	  <title>Angular</title>
+	</head>
+	<body ng-init="qt = 1; cst = 1.5">
+	   	<p>Produtos: <input type="number" ng-model="qt" min="0"></p>
+	   	<p>Custo: <input type="number" ng-model="cst" min="1"></p>
+	   	<p>Valor Total: R{{ qt * cst | currency }}</p>
+	</body>
+</html>
